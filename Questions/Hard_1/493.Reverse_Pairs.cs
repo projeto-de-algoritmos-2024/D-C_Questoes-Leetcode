@@ -87,4 +87,8 @@ public class Solution {
         
         return MergeAndCount(listL, 0, listL.Length - 1);
     }
+    
+    public int ReversePairs(int[] nums) {
+        return Solution.SortAndCount(nums);
+    }
 }
