@@ -10,8 +10,10 @@
 // }
 
 public class Solution {
-    static void Merge(int[] listL, int esq, int meio, int dir)
+    static int Merge(int[] listL, int esq, int meio, int dir)
     {
+        int inversoes = 0;
+        
         int tamA = meio - esq + 1;
         int tamB = dir - meio;
         
@@ -26,7 +28,7 @@ public class Solution {
 
         while (iEsq < tamA && iDir < tamB)
         {
-            if (tempA[iEsq] > tempB[iDir])
+            if (tempA[iEsq] > (tempB[iDir] * 2))
             {
                 listL[pos] = tempB[iDir];
                 iDir++;
@@ -52,18 +54,28 @@ public class Solution {
             iDir++;
             pos++;
         }
+
+        return inversoes;
     }
     
-    public static void MergeAndCount(int[] listL, int esq, int dir)
+    public static int MergeAndCount(int[] listL, int esq, int dir)
     {
         if (esq >= dir) return 0;
 
         int meio = esq + (dir - esq) / 2;
 
-        MergeAndCount(listL, esq, meio);
-        MergeAndCount(listL, meio + 1, dir);
+        int inversoes = MergeAndCount(listL, esq, meio) + MergeAndCount(listL, meio + 1, dir);
 
-        Merge(listL, esq, meio, dir);
+        inversoes += Merge(listL, esq, meio, dir);
+
+        return inversoes;
+    }
+
+    public static int SortAndCount(int[] listL)
+    {
+        if(listL.Length == 1) return 0;
+        
+        return MergeAndCount(listL, 0, listL.Length - 1);
     }
 }
 
@@ -75,8 +87,11 @@ class Program
 
         Console.WriteLine("Array original:");
         Console.WriteLine(string.Join(" ", array));
+        
+        int inversoes = Solution.SortAndCount(array);
 
         Console.WriteLine("\nArray ordenado:");
         Console.WriteLine(string.Join(" ", array));
+        Console.WriteLine($"Inversoes: {inversoes}");
     }
 }
