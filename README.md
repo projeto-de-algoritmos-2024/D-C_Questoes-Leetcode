@@ -90,4 +90,4 @@ Os Links nos títulos levam ao `.md` com detalhes acerca da solução de cada qu
 
 - ### Questão Difícil 1: [493. Reverse Pairs](https://youtu.be/7Rlj3mMY_vo)
 
-- ### Questão Difícil 2: [315. Count of Smaller Numbers After Self]()
+- ### Questão Difícil 2: [315. Count of Smaller Numbers After Self](https://youtu.be/kMqnSzIC8lA)
