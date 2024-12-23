@@ -38,14 +38,16 @@ public class Solution {
     {
         int inversoes = 0;
         int k = meio + 1;
+        int inv = 0;
         
         for (int i = esq; i <= meio; i++)
         {
             while (k <= dir && listL[i] > (2L * listL[k]))
             {
                 k++;
+                inv++;
             }
-            inversoes += (k - meio - 1);
+            inversoes += inv;
         }
         
         int tamA = meio - esq + 1;
