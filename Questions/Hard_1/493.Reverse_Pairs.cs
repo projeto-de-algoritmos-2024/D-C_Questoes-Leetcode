@@ -28,9 +28,10 @@ public class Solution {
 
         while (iEsq < tamA && iDir < tamB)
         {
-            if (tempA[iEsq] > (tempB[iDir] * 2))
+            if (tempA[iEsq] > (tempB[iDir] * 2L))
             {
                 listL[pos] = tempB[iDir];
+                inversoes++;
                 iDir++;
             }
             else
