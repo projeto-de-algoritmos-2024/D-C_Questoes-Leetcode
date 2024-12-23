@@ -88,6 +88,6 @@ Os Links nos títulos levam ao `.md` com detalhes acerca da solução de cada qu
 
 ## Vídeos Explicando as Questões
 
-- ### Questão Difícil 1: [493. Reverse Pairs]()
+- ### Questão Difícil 1: [493. Reverse Pairs](https://youtu.be/7Rlj3mMY_vo)
 
 - ### Questão Difícil 2: []()
