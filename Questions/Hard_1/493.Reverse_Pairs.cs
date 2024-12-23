@@ -13,6 +13,16 @@ public class Solution {
     static int Merge(int[] listL, int esq, int meio, int dir)
     {
         int inversoes = 0;
+        int k = meio + 1;
+        
+        for (int i = esq; i <= meio; i++)
+        {
+            while (k <= dir && listL[i] > (2L * listL[k]))
+            {
+                k++;
+            }
+            inversoes += (k - meio - 1);
+        }
         
         int tamA = meio - esq + 1;
         int tamB = dir - meio;
@@ -28,16 +38,15 @@ public class Solution {
 
         while (iEsq < tamA && iDir < tamB)
         {
-            if (tempA[iEsq] > (tempB[iDir] * 2L))
-            {
-                listL[pos] = tempB[iDir];
-                inversoes++;
-                iDir++;
-            }
-            else
+            if (tempA[iEsq] <= tempB[iDir])
             {
                 listL[pos] = tempA[iEsq];
                 iEsq++;
+            }
+            else
+            {
+                listL[pos] = tempB[iDir];
+                iDir++;
             }
             pos++;
         }
@@ -77,22 +86,5 @@ public class Solution {
         if(listL.Length == 1) return 0;
         
         return MergeAndCount(listL, 0, listL.Length - 1);
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        int[] array = [1,3,2,3,1];
-
-        Console.WriteLine("Array original:");
-        Console.WriteLine(string.Join(" ", array));
-        
-        int inversoes = Solution.SortAndCount(array);
-
-        Console.WriteLine("\nArray ordenado:");
-        Console.WriteLine(string.Join(" ", array));
-        Console.WriteLine($"Inversoes: {inversoes}");
     }
 }
