@@ -42,7 +42,7 @@ Tendo em vista a aplicação do conteúdo D&C, ou melhor, Dividir e Conquistar (
 | Nível   | Link para a questão                                                            | Linguagem |
 |---------|--------------------------------------------------------------------------------|-----------|
 | Difícil | [493. Reverse Pairs](https://leetcode.com/problems/reverse-pairs/description/) | C#        |
-| Difícil | []()  | Java      |
+| Difícil | [315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/)  | Java      |
 
 ## Uso / Manual de como Rodar
 
