@@ -78,11 +78,11 @@ Os Links nos títulos levam ao `.md` com detalhes acerca da solução de cada qu
 
 </center>
 
-### [](./Questions/Hard_2/Hard_2.md)
+### [315. Count of Smaller Numbers After Self](./Questions/Hard_1/Hard_2.md)
 
 <center>
 
-![](./assets/details_hard2.png)
+![](./assets/details_hard_2.png)
 
 </center>
 
@@ -90,4 +90,4 @@ Os Links nos títulos levam ao `.md` com detalhes acerca da solução de cada qu
 
 - ### Questão Difícil 1: [493. Reverse Pairs]()
 
-- ### Questão Difícil 2: []()
+- ### Questão Difícil 2: [315. Count of Smaller Numbers After Self]()
