@@ -42,7 +42,7 @@ Tendo em vista a aplicação do conteúdo D&C, ou melhor, Dividir e Conquistar (
 | Nível   | Link para a questão                                                            | Linguagem |
 |---------|--------------------------------------------------------------------------------|-----------|
 | Difícil | [493. Reverse Pairs](https://leetcode.com/problems/reverse-pairs/description/) | C#        |
-| Difícil | []()  | Java      |
+| Difícil | [315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/)  | Java      |
 
 ## Uso / Manual de como Rodar
 
@@ -78,11 +78,11 @@ Os Links nos títulos levam ao `.md` com detalhes acerca da solução de cada qu
 
 </center>
 
-### [](./Questions/Hard_2/Hard_2.md)
+### [315. Count of Smaller Numbers After Self](./Questions/Hard_2/Hard_2.md)
 
 <center>
 
-![](./assets/details_hard2.png)
+![](./assets/details_hard_2.png)
 
 </center>
 
@@ -90,4 +90,4 @@ Os Links nos títulos levam ao `.md` com detalhes acerca da solução de cada qu
 
 - ### Questão Difícil 1: [493. Reverse Pairs](https://youtu.be/7Rlj3mMY_vo)
 
-- ### Questão Difícil 2: []()
+- ### Questão Difícil 2: [315. Count of Smaller Numbers After Self]()
