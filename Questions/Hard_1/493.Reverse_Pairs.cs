@@ -26,7 +26,7 @@ public class Solution {
 
         while (iEsq < tamA && iDir < tamB)
         {
-            if (tempA[iEsq] > tempB[iDir]))
+            if (tempA[iEsq] > tempB[iDir])
             {
                 listL[pos] = tempB[iDir];
                 iDir++;
@@ -53,12 +53,30 @@ public class Solution {
             pos++;
         }
     }
+    
+    public static void MergeAndCount(int[] listL, int esq, int dir)
+    {
+        if (esq >= dir) return 0;
+
+        int meio = esq + (dir - esq) / 2;
+
+        MergeAndCount(listL, esq, meio);
+        MergeAndCount(listL, meio + 1, dir);
+
+        Merge(listL, esq, meio, dir);
+    }
 }
 
 class Program
 {
     static void Main(string[] args)
     {
-        
+        int[] array = [1,3,2,3,1];
+
+        Console.WriteLine("Array original:");
+        Console.WriteLine(string.Join(" ", array));
+
+        Console.WriteLine("\nArray ordenado:");
+        Console.WriteLine(string.Join(" ", array));
     }
 }
