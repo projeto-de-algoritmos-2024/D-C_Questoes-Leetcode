@@ -78,7 +78,7 @@ Os Links nos títulos levam ao `.md` com detalhes acerca da solução de cada qu
 
 </center>
 
-### [315. Count of Smaller Numbers After Self](./Questions/Hard_1/Hard_2.md)
+### [315. Count of Smaller Numbers After Self](./Questions/Hard_2/Hard_2.md)
 
 <center>
 
